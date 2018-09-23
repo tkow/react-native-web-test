@@ -1,10 +1,7 @@
 import React, { StatelessComponent } from "react";
-import {  ViewStyle, TextStyle, GestureResponderEvent } from "react-native";
+import {  Text,ViewStyle, TextStyle, GestureResponderEvent,TouchableOpacity } from "react-native";
 
-import {
-  TouchZone,
-  TagText
-} from "./style";
+import styles from "./style";
 
 export interface TagProps {
   label?:string
@@ -21,7 +18,7 @@ export const Tag:StatelessComponent<TagProps> = ({
   readOnly=true,
   tagTextStyle
  }) => (
-  <TouchZone disabled={readOnly} style={style} onPress={onPress}>
-    <TagText style={tagTextStyle}>{label}</TagText>
-  </TouchZone>
+  <TouchableOpacity disabled={readOnly} style={styles.TouchZone} onPress={onPress}>
+    <Text style={tagTextStyle}>{label}</Text>
+  </TouchableOpacity>
 );

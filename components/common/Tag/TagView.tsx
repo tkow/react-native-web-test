@@ -3,14 +3,11 @@ import {
   View, 
   ViewStyle,
   TextStyle,
+  TextInput,
   TextInputProps
 } from "react-native";
 import {Tag} from "./Tag";
-import {
-  Container,
-  TextInputContainer,
-  TextInput
-} from './style'
+import styles from './style'
 import {
   compose,
   withState,
@@ -42,32 +39,32 @@ export interface TagViewProps extends Partial<TagViewState>,TagViewStyleProps {
   onTagPress?(tag:string,index:number,event:any): any
 };
 
-const _TagViewBase: StatelessComponent<TagViewProps> = (props) => (
-  <Container
-    style={props.style}
+const _TagViewBase: StatelessComponent<TagViewProps> = (props:any) => (
+  <View
+    style={[styles.Container,props.style]}
   >
   {props.tags.map((tag, i) => (
     <Tag
       key={i}
       label={tag}
       onPress={(event)=>props.onTagPress&& props.onTagPress(tag,i,event)}
-      style={props.tagContainerStyle}
+      style={props.tagViewStyle}
       tagTextStyle={props.tagTextStyle}
       readOnly={props.readOnly}
     />
   ))}
   {!props.readOnly && (
-    <TextInputContainer>
+    <View style={styles.TextInputContainer}>
       <TextInput
         value={props.text}
-        style={props.inputStyle}
+        style={[styles.TextInput,props.inputStyle]}
         onChangeText={props.handleOnChangeText}
         onEndEditing={props.onEndEditing}
         underlineColorAndroid="transparent"
       />
-    </TextInputContainer>
+    </View>
   )}
-  </Container>
+  </View>
 ) 
 
 const TagViewBase:React.ComponentClass<TagViewProps> = compose(

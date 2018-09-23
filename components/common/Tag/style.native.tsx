@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
-import styled from 'styled-components/native'
+import _styled from 'styled-components/native'
+
+const styled:any = _styled
 
 const defaultScale = 1
 const defaultTagSize = 32
