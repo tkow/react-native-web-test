@@ -5744,7 +5744,7 @@ re-resizable@^4.8.1:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/re-resizable/-/re-resizable-4.9.0.tgz#0160728b9d7e32371fb26562221678ae643e6557"
 
-react-art@^16.4.0, react-art@^16.5.0, react-art@^16.5.2:
+react-art@^16.5.0, react-art@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.5.2.tgz#dabfc9a5ef565ecb4f817bb0e872f9a5cd7f89cb"
   dependencies:
@@ -5888,7 +5888,7 @@ react-live@^1.11.0:
     prop-types "^15.5.8"
     unescape "^0.2.0"
 
-react-native-web@^0.8.3, react-native-web@^0.8.9:
+react-native-web@^0.8.9:
   version "0.8.11"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.8.11.tgz#e569af7076527af40ae7b4e6ce81e0544913a7c7"
   dependencies:
@@ -5931,9 +5931,9 @@ react-powerplug@^1.0.0-rc.1:
   dependencies:
     "@babel/runtime" "7.0.0-beta.49"
 
-react-primitives@^0.6.1:
+react-primitives@tkow/react-primitives#master:
   version "0.6.1"
-  resolved "https://registry.yarnpkg.com/react-primitives/-/react-primitives-0.6.1.tgz#7ea4082a7831cbaf928a12058f7950d228dbcdec"
+  resolved "https://codeload.github.com/tkow/react-primitives/tar.gz/a16cabd5a309d508b117bc0350f1e29ce3ae0a01"
   dependencies:
     animated "^0.2.2"
     asap "^2.0.5"
@@ -5943,8 +5943,6 @@ react-primitives@^0.6.1:
     invariant "^2.2.1"
     normalize-css-color "^1.0.1"
     prop-types "^15.5.10"
-    react-art "^16.4.0"
-    react-native-web "^0.8.3"
     react-timer-mixin "^0.13.3"
     string-hash "^1.1.3"
 

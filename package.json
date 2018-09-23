@@ -17,7 +17,7 @@
     "react-art": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-native-web": "^0.9.0",
-    "react-primitives": "^0.6.1",
+    "react-primitives": "tkow/react-primitives#0.7.0",
     "recompose": "^0.30.0",
     "styled-components": "^4.0.0-beta.8"
   }
