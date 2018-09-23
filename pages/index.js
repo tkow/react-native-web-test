@@ -2,6 +2,15 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import {TagView} from '../components/common/Tag'
 
+import styled from 'styled-components/primitives'
+
+export const TextTest = styled.Text`
+  font-size: 1.4rem;
+  color: red;
+  justify-content:center;
+  align-items:center;
+`
+
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
@@ -30,5 +39,6 @@ export default props => (
         ['C','C++','C#']
       }
     />
+    <TextTest>test</TextTest>
   </View>
 )
