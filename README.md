@@ -1,9 +1,7 @@
 
-### Download manually
+### Devserver
 
-Download the example:
-
-Install it and run:
+clone this repository and
 
 ```bash
 npm install
@@ -11,12 +9,6 @@ npm run dev
 # or
 yarn
 yarn dev
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```bash
-now
 ```
 
 ## The idea behind the example
